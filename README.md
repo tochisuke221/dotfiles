@@ -5,7 +5,7 @@
 ## インストール方法
 
 ```bash
-git clone <このリポジトリのURL>
+git clone https://github.com/tochisuke221/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
