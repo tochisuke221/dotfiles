@@ -1,0 +1,29 @@
+# tig pre-commit
+bind status C !sh -c "command -v git-cz && (git-cz;:) || git commit"
+
+# branch
+bind branch c !git checkout %(branch)
+bind branch n !git checkout -b %(prompt) %(branch)
+bind branch l !git pull origin %(branch)
+bind branch P !git push origin %(branch)
+bind branch D !git br -D %(branch)
+
+
+color default white black
+color cursor default magenta
+color date cyan default
+color delimiter cyan default
+color line-number yellow default
+color diff-header yellow default
+color diff-index blue default
+color diff-chunk magenta default
+color "Reported-by:" green default
+color graph-commit cyan default
+
+
+
+
+# カラー設定
+# diff-view で境界が見やすくなるように変更
+color  diff-header       default magenta
+color  diff-chunk        black   white
